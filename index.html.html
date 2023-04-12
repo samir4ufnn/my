@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBar</title>
+
+    <!--============== Google Fonts =============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--============== Remixicons  =============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--============== Main CSS  =============-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+
+<body>
+    <!--======================= Header =============================-->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__brand"><h2><span>Food</span>Bar</h2></a>
+            <div id="nav-menu" class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#feature" class="nav__link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__buttons">
+                <div class="nav__icon shop__icon">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="shop__number">0</span>
+                </div>
+                <div class="nav__icon nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+                <div class="nav__icon sidebar__toggle">
+                    <i id="sidebar-toggle" class="ri-more-2-fill"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--======================= Sidebar =============================-->
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar__header">
+                <h2 class="sidebar__title">Contact</h2>
+                <p class="sidebar__description"></p>
+            </div>
+            <div class="sidebar__content">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <span class="sidebar__subtitle">Address:</span>
+                        <span> Ground Floor Extension RK Plaza IT Care, Vivekananda Marg, Balasore, Odisha 756001</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <span class="sidebar__subtitle">Open Hours:</span>
+                        <span>8:00 AM - 9:00 PM</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <span class="sidebar__subtitle">Call Us:</span>
+                        <span>+(91) 987-0250-001</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <span class="sidebar__subtitle">Mail Us:</span>
+                        <span>info@example.com</span>
+                    </li>
+                    <li class="sidebar__item">
+                        <span class="sidebar__subtitle">Follow Us:</span>
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a href="javascript:void(0)" class="social__link">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--======================= Home =============================-->
+        <section id="home" class="home">
+            <div class="d-grid home__wrapper container">
+                <div class="home__content">
+                    <h1 class="home__title">A <font color=red>Taste</font> that will make you feel <font color=green>Emotions!</font></h1>
+                    <p class="home__description"><h4>One cannot think well,<br> 
+                        Love well, sleep well,<br>
+                        if one has not dined well.
+                    </p><br></h4>
+                    <a href="#" class="btn btn--primary">Explore Our Menu</a>
+                </div>
+                <img src="assets/img/biriyani.png" alt="" class="home__img">
+            </div>
+        </section>
+         <!--======================= Menu ============================-->
+         <section id="menu" class="section menu">
+            <div class="section__header">
+                <span class="section__subtitle">Our Menu</span>
+                <h2 class="section__title">Today Special Menu</h2>
+            </div>
+            <div class="menu__filter">
+                <span class="menu__item menu__item--active" data-filter=".breakfast">Breakfast</span>
+                <span class="menu__item" data-filter=".lunch">Lunch</span>
+                <span class="menu__item" data-filter=".dinner">Dinner</span>
+                <span class="menu__item" data-filter=".dessert">Desserts & Drinks</span>
+               
+            </div>
+            <div class="d-grid menu__wrapper container">
+                <!------ breakfast 1 ---------->
+                <div class="menu__card breakfast mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/kultcha.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Old Delhi Kulcha</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹200.00</span>
+                    </div>
+                </div>
+                <!------ breakfast 2 ---------->
+                <div class="menu__card breakfast mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/meduvada.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">South Meduvada</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹120.00</span>
+                    </div>
+                </div>
+                <!------ breakfast 3 ---------->
+                <div class="menu__card breakfast mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/dosa.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Sliced Egg Sandwich</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹150.00</span>
+                    </div>
+                </div>
+                 <!------ breakfast 4 ---------->
+                 <div class="menu__card breakfast mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/sand.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Sliced Egg Sandwich</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹150.00</span>
+                    </div>
+                </div>
+                 <!------ breakfast 5 ---------->
+                 <div class="menu__card breakfast mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/brger.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">HM Burger</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹199.00</span>
+                    </div>
+                </div>
+                 <!------ breakfast 6 ---------->
+                 <div class="menu__card breakfast mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/eggbread.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Thai Egg Bread</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹159.00</span>
+                    </div>
+                </div>
+                  <!------ Lunch 1 ---------->
+                <div class="menu__card lunch mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/biriyani.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Hydrabadi Biriyani</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹199.00</span>
+                    </div>
+                </div>
+                <!------ Lunch 2 ---------->
+                <div class="menu__card lunch mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/paneer.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Panner Butter Masla</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹199.00</span>
+                    </div>
+                </div>
+                <!------ Lunch 3 ---------->
+                <div class="menu__card lunch mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/c65.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Chicken 65</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹219.00</span>
+                    </div>
+                </div>
+                 <!------ Lunch 4 ---------->
+                 <div class="menu__card lunch mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/veg.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Veg Thali</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹200.00</span>
+                    </div>
+                </div>
+                 <!------ Lunch 5 ---------->
+                 <div class="menu__card lunch mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/mtn.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Mutton</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹299.00</span>
+                    </div>
+                </div>
+                 <!------ Lunch 6 ---------->
+                 <div class="menu__card lunch mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/msrm.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Mushroom Masala</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹249.00</span>
+                    </div>
+                </div>
+
+                <!------ dinner 1 ---------->
+                <div class="menu__card dinner mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/momo.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Darjling Momo</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹150.00</span>
+                    </div>
+                </div>
+                <!------ dinner 2 ---------->
+                <div class="menu__card dinner mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/pata.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">sea food</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹150.00</span>
+                    </div>
+                </div>
+                <!------ dinner 3 ---------->
+                <div class="menu__card dinner mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/dinner1.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Chowmin</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹99.00</span>
+                    </div>
+                </div>
+                <!------ dinner 4 ---------->
+                <div class="menu__card dinner mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/fiz.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Maxican Frise</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹99.00</span>
+                    </div>
+                </div>
+                <!------ dinner 5 ---------->
+                <div class="menu__card dinner mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/sop.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">xz soup</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹199.00</span>
+                    </div>
+                </div>
+                <!------ dinner 6 ---------->
+                <div class="menu__card dinner mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/pza.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Pizza Mania</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹299.00</span>
+                    </div>
+                </div>
+
+                <!------ desserts 1 ---------->
+                <div class="menu__card dessert mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/dessert1.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Oreo Ice Cream</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹200.00</span>
+                    </div>
+                </div>
+                <!------ desserts 2 ---------->
+                <div class="menu__card dessert mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/dessert2.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Raspeberry Cake</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹160.00</span>
+                    </div>
+                </div>
+                <!------ desserts 3 ---------->
+                <div class="menu__card dessert mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/dessert3.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Chocolate Cake</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹230.00</span>
+                    </div>
+                </div>
+                <!------ desserts 4 ---------->
+                <div class="menu__card dessert mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/red gij.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Thai Red sip</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹230.00</span>
+                    </div>
+                </div>
+                <!------ desserts 5 ---------->
+                <div class="menu__card dessert mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/cool.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">cool mint</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹150.00</span>
+                    </div>
+                </div>
+                <!------ desserts 6 ---------->
+                <div class="menu__card dessert mix">
+                    <div class="menu__img-wrapper">
+                        <img src="assets/img/gim.jpg" alt="" class="menu__img">
+                    </div>
+                    <div class="menu__card-body">
+                        <h3 class="menu__title">Drink Tl</h3>
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                        <span class="menu__price">₹299.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======================= feature =============================-->
+        <section id="feature" class="section feature">
+            <div class="section__header">
+                <span class="section__subtitle">Features</span>
+                <h2 class="section__title">Why Choose Us?</h2>
+            </div>
+            <div class="d-grid feature__wrapper container">
+                <!------- feature card 1 -------->
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="ri-file-list-3-line"></i>
+                    </div>
+                    <h3 class="feature__title">Extensive Menu</h3>
+                    <p class="feature__description">Live wanted yet best journey now options own explore silently.
+                       </p>
+                </div>
+                <!------- feature card 2 -------->
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="ri-takeaway-line"></i>
+                    </div>
+                    <h3 class="feature__title">Fast Delivery</h3>
+                    <p class="feature__description">
+                        Our restaurant deliver food with in 30 minutes
+                    </p>
+                </div>
+                <!------- feature card 3 -------->
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="ri-medal-2-line"></i>
+                    </div>
+                    <h3 class="feature__title">High Quality</h3>
+                    <p class="feature__description">
+                        The restaurant offers high quality dishes,
+                         ensuring that every bite is a delicious and satisfying experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--======================= About ============================-->
+        <section id="about" class="section about">
+            <div class="d-grid about__wrapper container">
+                <div class="about__content">
+                    <span class="about__subtitle">Welcome To FoodLovers</span>
+                    <h2 class="about__title">We Cook Tradition and Family Recipes</h2>
+                    <p class="about__description">Melted lovers bell chicken sauce white ipsum tossed Chicago sauce.
+                        Lasagna anchovies anchovies onions crust black.
+                        Marinara hand ipsum cheese pineapple. Stuffed ririb Hawaiian pie buffalo.
+                        <br><br>
+                        Deep marinara pineapple deep lovers party stblack bbq bell. Onions lovers mushrooms Bianca
+                        lovers.
+                    </p>
+                    <a href="javascript:void(0)" class="btn btn--primary">Discover Our Story</a>
+                </div>
+                <img src="assets/img/cook.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        
+
+        <!--======================= Testimonial ============================-->
+        <section class="section testimonial">
+            <div class="section__header">
+                <span class="section__subtitle">Feedback from</span>
+                <h2 class="section__title">Happy Clients</h2>
+            </div>
+            <div class="d-grid testimonial__wrapper container">
+                <!------- testimonial card 1 ------------>
+                <div class="testimonial__card">
+                    <div class="testimonial__header">
+                        <img class="testimonial__img" alt="" src="assets/img/c1.jpg">
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="testimonial__body">
+                        <p class="testimonial__quote">
+                            "I had the most amazing steak at this restaurant last night.
+                             It was cooked to perfection and seasoned just right. 
+                             The side dishes were also delicious and complemented the steak perfectly.
+                              I would highly recommend this dish to anyone who loves a good steak."
+                        </p>
+                        <h3 class="testimonial__name">Tusar</h3>
+                    </div>
+                </div>
+                <!------- testimonial card 2 ------------>
+                <div class="testimonial__card">
+                    <div class="testimonial__header">
+                        <img class="testimonial__img" alt="" src="assets/img/c2.jpg">
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="testimonial__body">
+                        <p class="testimonial__quote">
+                            The sushi at this restaurant was amazing.
+                             The fish was incredibly fresh and the rolls were made with such care and precision. 
+                            The presentation of the food was also beautiful.
+                             I would definitely come back here again for more sushi.
+                        </p>
+                        <h3 class="testimonial__name">Shyam</h3>
+                    </div>
+                </div>
+                <!------- testimonial card 3 ------------>
+                <div class="testimonial__card">
+                    <div class="testimonial__header">
+                        <img class="testimonial__img" alt="" src="assets/img/testimonial3.jpg">
+                        <div class="rating">
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-fill"></i>
+                            </span>
+                            <span class="rating__star">
+                                <i class="ri-star-half-fill"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="testimonial__body">
+                        <p class="testimonial__quote">
+                            I had the vegetarian platter at this restaurant and it was delicious. 
+                            There was a good variety of dishes and all of them were full of flavor.
+                        <h3 class="testimonial__name">sison</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--======================= Blog ============================-->
+        <section id="blog" class="section blog">
+            <div class="section__header">
+                <span class="section__subtitle">Our Blog</span>
+                <h2 class="section__title">Latest Posts</h2>
+            </div>
+            <div class="d-grid blog__wrapper container">
+                <!------- blog post 1 --------->
+                <div class="blog__post">
+                    <div class="blog__overlay"></div>
+                    <img src="assets/img/brk.jpg" alt="" class="blog__img">
+                    <div class="blog__content">
+                        <h3 class="blog__title">30 Healthy breakfast ideias for 2023</h3>
+                        <a href="javascript:void(0)" class="blog__link">Read More</a>
+                    </div>
+                </div>
+                <!------- blog post 2 --------->
+                <div class="blog__post">
+                    <div class="blog__overlay"></div>
+                    <img src="assets/img/grn.jpg" alt="" class="blog__img">
+                    <div class="blog__content">
+                        <h3 class="blog__title">Top 10 favorite Healthy recipes from 2023</h3>
+                        <a href="javascript:void(0)" class="blog__link">Read More</a>
+                    </div>
+                </div>
+                <!------- blog post 3 --------->
+                <div class="blog__post">
+                    <div class="blog__overlay"></div>
+                    <img src="assets/img/yel.jpg" alt="" class="blog__img">
+                    <div class="blog__content">
+                        <h3 class="blog__title">How to make hard Fruit Juce</h3>
+                        <a href="javascript:void(0)" class="blog__link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--======================= Footer ============================-->
+    <footer class="footer">
+        <div class="d-grid footer__wrapper container">
+            <div class="footer__content">
+                <h4 class="footer__brand"><span>Food</span>Lover</h4>
+                <p class="footer__description">A good meal is not just about the food on the plate, 
+                    but the people you share it with.</p>
+                <ul class="social__list footer__list">
+                    <li class="social__item">
+                        <a href="javascript:void(0)" class="social__link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="javascript:void(0)" class="social__link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="javascript:void(0)" class="social__link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="javascript:void(0)" class="social__link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h4 class="footer__title">Our Menu</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Breakfast</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Lunch</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Dinner</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Desserts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h4 class="footer__title">Quick Links</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Menu</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">About Us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Testimonials</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h4 class="footer__title">Support</h4>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Contact</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Terms Of Use</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="javascript:void(0)" class="footer__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copyright"># Proud To Be Food Lover</p>
+    </footer>
+
+
+    <!--=================== ScrollReveal ==================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=================== Mixitup  ====================-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=================== Main JS ====================-->
+    <script src="assets/js/main.js"> </script>
+
+</body>
+
+</html>
